@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Lexmed Mega Dropdown</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
   </head>
   <body>
     <div class="navbar navbar-fixed-top">
@@ -21,13 +22,39 @@
         </ul>
       </div>
     </div>
-
+    <div class="nav grayBackground">
+      <div class="col-lg-6 col-lg-offset-3">  
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a data-toggle="dropdown" href="#">Patients & Visitors <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li>TEST</li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" href="#">Locations & Directions <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li>Item 1</li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" href="#">Medical Services <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+             <li>Item 1</li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" href="#">Find a Doctor <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li>Item 1</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- JavaScript plugins (requires jQuery) -->
     <script src="http://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="js/respond.js"></script>
   </body>
 </html>
