@@ -1,8 +1,12 @@
 $(document).ready(function () {
-	$('.dropdown').hover(function () {
-		$('.dropdown-menu', this).slideDown(200);
-	},
-	function () {
-		$('.dropdown-menu', this).slideUp(200);
+	$('.dropdown').hoverIntent({
+		over: function () {
+			$('.dropdown-menu', this).slideDown(200);
+			timeout: 200
+		},
+		out: function () {
+			$('.dropdown-menu', this).slideUp(200);
+		},
+		timeout: 200
 	});
 });
