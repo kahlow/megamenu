@@ -41,7 +41,6 @@ body {
 }
 
 .content .col-lg-4{
-	position: relative;
 	padding: 50px;
 	background-color: white;
 }
@@ -53,5 +52,5 @@ body {
 .menudropdown {
 	display: none;
 	background-color: white;
-	position: absolute;
+	width: 100%
 }

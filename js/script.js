@@ -1,9 +1,9 @@
 $(document).ready(function () {
 	$('.undernav ul li a').hoverIntent({
 		over: function () {
-			$('.menudropdown').show();
-			$('.menudropdown', this).slideDown(200);
-			timeout: 200
+			$('.menudropdown').slideDown(200, function (){
+				$('.menudropdown').show();
+			});
 		},
 		out: function () {
 			$('.menudropdown').hide();
