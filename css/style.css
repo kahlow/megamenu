@@ -1,17 +1,33 @@
 .navbar.navbar-fixed-top {
 	background: #1A6B4B;
+	background-image: -moz-linear-gradient( 90deg, rgb(25,101,71) 0%, rgb(29,118,83) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(25,101,71) 0%, rgb(29,118,83) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(25,101,71) 0%, rgb(29,118,83) 100%);
 }
 
 .navbar ul li a{
 	color: white;
 }
 
+.greentext li a{
+	color: #58c398!important;
+}
+
 body { 
-	padding-top: 50px; 
+	padding-top: 50px;
+	background-color: #e4e4d5; 
 }
 
 .undernav {
-	background-color: #EEE5DE;
+	background-color: #fafaf7;
+	height: 160px;
+	border-bottom: solid 6px rgb( 184, 186, 164 );
+}
+
+.undernav ul li a{
+	font-size: 23pt;
+	font-family: Myriad Pro;
+	font-weight: lighter;
 }
 
 .bordered {
@@ -19,14 +35,16 @@ body {
 }
 
 .dropdown {
-	height: 8em;
-	padding-top: 2em;
+	height: 11em;
+	padding-top: 4em;
 }
 
-.content {
-	padding-top: 50px;
+.content .col-lg-4{
+	padding: 50px;
+	background-color: white;
 }
 
 .dropdown-menu {
 	margin-top: 50px;
 }
+
