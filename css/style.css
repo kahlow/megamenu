@@ -10,7 +10,7 @@ body {
 	padding-top: 50px; 
 }
 
-.grayBackground {
+.undernav {
 	background-color: #EEE5DE;
 }
 
@@ -18,6 +18,15 @@ body {
 	border: solid;
 }
 
+.dropdown {
+	height: 8em;
+	padding-top: 2em;
+}
+
 .content {
 	padding-top: 50px;
+}
+
+.dropdown-menu {
+	margin-top: 50px;
 }
