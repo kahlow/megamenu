@@ -28,6 +28,7 @@ body {
 	font-size: 23pt;
 	font-family: Myriad Pro;
 	font-weight: lighter;
+	padding-top: 2em;
 }
 
 .bordered {
@@ -40,6 +41,7 @@ body {
 }
 
 .content .col-lg-4{
+	position: relative;
 	padding: 50px;
 	background-color: white;
 }
@@ -48,3 +50,8 @@ body {
 	margin-top: 50px;
 }
 
+.menudropdown {
+	display: none;
+	background-color: white;
+	position: absolute;
+}
