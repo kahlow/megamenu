@@ -25,9 +25,6 @@ body {
 }
 
 .undernav ul li a{
-	font-size: 23pt;
-	font-family: Myriad Pro;
-	font-weight: lighter;
 	padding-top: 2em;
 }
 
@@ -50,7 +47,9 @@ body {
 }
 
 .menudropdown {
+	position: absolute;
 	display: none;
 	background-color: white;
-	width: 100%
+	width: 100%;
+	z-index: 999;
 }
