@@ -5,11 +5,17 @@
 	background-image: -ms-linear-gradient( 90deg, rgb(25,101,71) 0%, rgb(29,118,83) 100%);
 }
 
-.navbar ul li a{
+.contentwidth {
+	width: 60%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.navbar ul li a { 
 	color: white;
 }
 
-.greentext li a{
+.greentext li a {
 	color: #58c398!important;
 }
 
@@ -26,6 +32,7 @@ body {
 
 .undernav ul li a{
 	padding-top: 2em;
+	padding-bottom: 100%;
 }
 
 .bordered {
