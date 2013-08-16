@@ -33,6 +33,7 @@ body {
 .undernav ul {
 	text-align: center;
 	height: 100%;
+	padding-top: 3.5em;
 }
 
 .undernav ul li {

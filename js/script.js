@@ -1,32 +1,73 @@
+// this code smells...
 $(document).ready(function () {
-	$('.undernav ul li').hoverIntent({
+	$('.undernav ul li.patients').hoverIntent({
 		over: function () {
-			// if not visible
-			if (!$('.menudropdown').is(':visible')) {
-				$('.menudropdown').slideDown(200, function () {
-					$('.menudropdown').show();
-				});
-			}
-			else {
-				// if visible, slide up and slide down new menu
-				$('.menudropdown').slideUp('fast', function () {
-					$('.menudropdown').hide();
-				});
-				$('.menudropdown').slideDown(200, function () {
-					$('.menudropdown').show();
-				});
-			}
+			$.fn.menudropdown('patients');
 		}
 	});
 
-	$('.menudropdown').hover(
-		function () {
-
-		},
-		function () {
-			$('.menudropdown').slideUp('fast', function () {
-				$('.menudropdown').hide();
-			});
+	$('.undernav ul li.locations').hoverIntent({
+		over: function () {
+			$.fn.menudropdown('locations');
 		}
-	);
+	});
+
+	$('.undernav ul li.medical').hoverIntent({
+		over: function () {
+			$.fn.menudropdown('medical');
+		}
+	});
+
+	$('.undernav ul li.doctor').hoverIntent({
+		over: function () {
+			$.fn.menudropdown('doctor');
+		}
+	});
+
+	$('.menudropdown.patients').mouseleave(function () {
+		$.fn.menuslideup('patients');
+	});
+
+	$('.menudropdown.locations').mouseleave(function () {
+		$.fn.menuslideup('locations');
+	});
+
+	$('.menudropdown.medical').mouseleave(function () {
+		$.fn.menuslideup('medical');
+	});
+
+	$('.menudropdown.doctor').mouseleave(function () {
+		$.fn.menuslideup('doctor');
+	});
+
+	$('.topnav').mouseenter(function () {
+		$('.menudropdown.').hide();
+	});
+
 });
+
+(function( $ ) {
+ 
+    $.fn.menudropdown = function( menuName ) {
+
+    	$('.menudropdown').hide();
+
+		$('.menudropdown.' + menuName).slideDown(200, function () {
+			$(this).show();
+		});
+
+    };
+ 
+}( jQuery ));
+
+(function( $ ) {
+ 
+    $.fn.menuslideup = function( menuName ) {
+
+		$('.menudropdown.' + menuName).slideUp(200, function () {
+			$(this).hide();
+		});
+
+    };
+ 
+}( jQuery ));
