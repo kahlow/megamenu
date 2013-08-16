@@ -11,7 +11,7 @@
 	margin-right: auto;
 }
 
-.navbar ul li a { 
+.topnav ul li a { 
 	color: white;
 }
 
@@ -30,6 +30,18 @@ body {
 	border-bottom: solid 6px rgb( 184, 186, 164 );
 }
 
+.undernav ul {
+	text-align: center;
+	height: 100%;
+}
+
+.undernav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
 .undernav ul li a{
 	padding-top: 2em;
 	padding-bottom: 100%;
@@ -44,7 +56,7 @@ body {
 	padding-top: 4em;
 }
 
-.content .col-lg-4{
+.copy {
 	padding: 50px;
 	background-color: white;
 }
