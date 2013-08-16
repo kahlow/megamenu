@@ -1,43 +1,43 @@
 // this code smells...
 $(document).ready(function () {
-	$('.undernav ul li.patients').hoverIntent({
+	$('.undernav ul li.nav1').hoverIntent({
 		over: function () {
-			$.fn.menudropdown('patients');
+			$.fn.menudropdown('nav1');
 		}
 	});
 
-	$('.undernav ul li.locations').hoverIntent({
+	$('.undernav ul li.nav2').hoverIntent({
 		over: function () {
-			$.fn.menudropdown('locations');
+			$.fn.menudropdown('nav2');
 		}
 	});
 
-	$('.undernav ul li.medical').hoverIntent({
+	$('.undernav ul li.nav3').hoverIntent({
 		over: function () {
-			$.fn.menudropdown('medical');
+			$.fn.menudropdown('nav3');
 		}
 	});
 
-	$('.undernav ul li.doctor').hoverIntent({
+	$('.undernav ul li.nav4').hoverIntent({
 		over: function () {
-			$.fn.menudropdown('doctor');
+			$.fn.menudropdown('nav4');
 		}
 	});
 
-	$('.menudropdown.patients').mouseleave(function () {
-		$.fn.menuslideup('patients');
+	$('.menudropdown.nav1').mouseleave(function () {
+		$.fn.menuslideup('nav1');
 	});
 
-	$('.menudropdown.locations').mouseleave(function () {
-		$.fn.menuslideup('locations');
+	$('.menudropdown.nav2').mouseleave(function () {
+		$.fn.menuslideup('nav2');
 	});
 
-	$('.menudropdown.medical').mouseleave(function () {
-		$.fn.menuslideup('medical');
+	$('.menudropdown.nav3').mouseleave(function () {
+		$.fn.menuslideup('nav3');
 	});
 
-	$('.menudropdown.doctor').mouseleave(function () {
-		$.fn.menuslideup('doctor');
+	$('.menudropdown.nav4').mouseleave(function () {
+		$.fn.menuslideup('nav4');
 	});
 
 	$('.topnav').mouseenter(function () {
