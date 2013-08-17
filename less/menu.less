@@ -1,4 +1,7 @@
-.navbar.navbar-fixed-top {
+@bodyColor: #E4E4D5;
+@navHeight: 50px;
+
+.topnavGradient {
 	background: #1A6B4B;
 	background-image: -moz-linear-gradient( 90deg, rgb(25,101,71) 0%, rgb(29,118,83) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(25,101,71) 0%, rgb(29,118,83) 100%);
@@ -11,59 +14,49 @@
 	margin-right: auto;
 }
 
-.topnav ul li a { 
-	color: white;
+body {
+	background-color: @bodyColor;
+	padding-top: @navHeight;
 }
 
-.greentext li a {
-	color: #58c398!important;
-}
+.topnav {
+	.topnavGradient;
+	.navbar();
+	.navbar-fixed-top;
 
-body { 
-	padding-top: 50px;
-	background-color: brown; 
+	ul {
+		.nav();
+		.navbar-nav();
+		li {
+			a {
+				color: white;
+			}
+		}
+	}
 }
 
 .undernav {
 	background-color: #fafaf7;
 	height: 160px;
 	border-bottom: solid 6px rgb( 184, 186, 164 );
-}
 
-.undernav ul {
-	text-align: center;
-	height: 100%;
-	padding-top: 3.5em;
-}
+	ul {
+		text-align: center;
+		height: 100%;
+		padding-top: 3.5em;
 
-.undernav ul li {
-	list-style-type: none;
-	display: inline-block;
-	padding-left: 2em;
-	padding-right: 2em;
-}
+		li {
+			list-style-type: none;
+			display: inline-block;
+			padding-left: 2em;
+			padding-right: 2em;
 
-.undernav ul li a{
-	padding-top: 2em;
-	padding-bottom: 100%;
-}
-
-.bordered {
-	border: solid;
-}
-
-.dropdown {
-	height: 11em;
-	padding-top: 4em;
-}
-
-.copy {
-	padding: 50px;
-	background-color: white;
-}
-
-.dropdown-menu {
-	margin-top: 50px;
+			a { 
+				padding-top: 2em;
+				padding-bottom: 100%;
+			}
+		}
+	}
 }
 
 .menudropdown {
@@ -72,4 +65,10 @@ body {
 	background-color: white;
 	width: 100%;
 	z-index: 999;
+}
+
+.copy {
+	padding: 50px;
+	background-color: white;
+	.contentwidth;
 }

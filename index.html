@@ -3,28 +3,26 @@
   <head>
     <title>Mega Dropdown</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/style.css" rel="stylesheet" media="screen">
+    <!-- LESS -->
+    <link rel="stylesheet/less" type="text/css" href="less/styles.less" />
+    <script src="js/less-1.4.1.min.js" type="text/javascript"></script>
   </head>
   <body>
-    <nav class="navbar navbar-fixed-top topnav" role="navigation">
-      <div class="contentwidth">
-        <ul class="nav navbar-nav greentext">
+    <div class="topnav" role="navigation">
+        <ul class="greentext">
           <li><a href="#">Nav</a></li>
           <li><a href="#">Nav</a></li>
           <li><a href="#">Nav</a></li>
         </ul>
-        <ul class="nav navbar-nav">
+        <ul>
           <li><a href="#">Nav</a></li>
         </ul>
-        <ul class="nav navbar-nav pull-right">
+        <ul class="pull-right">
           <li><a href="#">Nav</a></li>
           <li><a href="#">Nav</a></li>
           <li><a href="#">Nav</a></ul>
         </ul>
-      </div>
-    </nav> 
+    </div> 
     <div class="undernav">
       <ul>
         <li class="nav1"><a href="#">Under Nav</a></li>
@@ -33,37 +31,39 @@
         <li class="nav4"><a href="#">Under Nav</a></li>
       </ul>
     </div>
-    <div class="content menudropdown nav1">
+    <!-- menu drop down -->
+    <div class="nav1 menudropdown">
       <div class="row">
         <div class="col-lg-4 col-lg-offset-4">
           <img src="http://placecage.com/c/300/300"/>
         </div>
       </div>
     </div>
-    <div class="content menudropdown nav2">
+    <div class="nav2 menudropdown">
       <div class="row">
         <div class="col-lg-4 col-lg-offset-4">
           <img src="http://placecage.com/300/300"/>
         </div>
       </div>
     </div>  
-    <div class="content menudropdown nav3">   
+    <div class="nav3 menudropdown">   
       <div class="row">
         <div class="col-lg-4 col-lg-offset-4">
           <img src="http://placecage.com/g/300/300"/>
         </div>
       </div>
     </div>   
-    <div class="content menudropdown nav4">  
+    <div class="nav4 menudropdown">  
       <div class="row">
         <div class="col-lg-4 col-lg-offset-4">
           <img src="http://placecage.com/c/200/200"/>
         </div>
       </div>
-    </div>     
+    </div>
+    <!-- end menu drop down -->
     <div class="content">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3 copy">
+        <div class="copy">
           <p>Bacon ipsum dolor sit amet meatloaf shank prosciutto turkey turducken, corned beef chuck cow kielbasa drumstick salami. Ham pig tenderloin jerky sirloin shankle bresaola. Frankfurter hamburger ground round cow, short loin turducken leberkas salami ham hock. Pork belly pork chop sausage ham capicola. Jerky pastrami flank salami prosciutto shankle biltong sausage tenderloin. Short loin prosciutto tail meatloaf frankfurter t-bone corned beef ham hock venison. Shank short ribs short loin tongue, bacon kielbasa prosciutto drumstick shankle andouille meatloaf.</p>
 
           <p>Bresaola beef ribs andouille swine shankle capicola. Pork chop prosciutto t-bone fatback chicken venison sirloin bresaola turkey pork loin short loin. Andouille pork turducken, meatball salami kielbasa drumstick shoulder flank rump swine tenderloin. T-bone kielbasa pork, beef swine flank hamburger meatloaf short loin. Prosciutto capicola jerky turducken, meatball meatloaf brisket rump pork chicken shoulder. Corned beef ball tip pig, pancetta hamburger andouille doner meatball.</p>
@@ -81,6 +81,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.hoverIntent.minified.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
