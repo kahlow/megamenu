@@ -1,6 +1,7 @@
 @bodyColor: #E4E4D5;
 @navHeight: 50px;
 
+// mixins
 .topnavGradient {
 	background: #1A6B4B;
 	background-image: -moz-linear-gradient( 90deg, rgb(25,101,71) 0%, rgb(29,118,83) 100%);
@@ -14,6 +15,11 @@
 	margin-right: auto;
 }
 
+.center {
+	text-align: center;
+}
+// end mixins
+
 body {
 	background-color: @bodyColor;
 	padding-top: @navHeight;
@@ -23,6 +29,7 @@ body {
 	.topnavGradient;
 	.navbar();
 	.navbar-fixed-top;
+
 
 	ul {
 		.nav();
@@ -45,7 +52,7 @@ body {
 	border-bottom: solid 6px rgb( 184, 186, 164 );
 
 	ul {
-		text-align: center;
+		.center;
 		height: 100%;
 		padding-top: 3.5em;
 
@@ -69,6 +76,12 @@ body {
 	background-color: white;
 	width: 100%;
 	z-index: 999;
+}
+
+.menucontent {
+	.col-md-6();
+	.contentwidth;
+	.center;
 }
 
 .copy {
