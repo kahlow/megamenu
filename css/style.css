@@ -1,27 +1,11 @@
-.navbar.navbar-fixed-top {
-	background: #1A6B4B;
-	background-image: -moz-linear-gradient( 90deg, rgb(25,101,71) 0%, rgb(29,118,83) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(25,101,71) 0%, rgb(29,118,83) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(25,101,71) 0%, rgb(29,118,83) 100%);
-}
-
 .contentwidth {
 	width: 980px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.topnav ul li a { 
-	color: white;
-}
-
 .greentext li a {
 	color: #58c398!important;
-}
-
-body { 
-	padding-top: 50px;
-	background-color: #e4e4d5; 
 }
 
 .undernav {
