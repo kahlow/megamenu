@@ -1,0 +1,20 @@
+@bodyColor: #E4E4D5;
+@navHeight: 50px;
+
+.topnavGradient {
+	background: #1A6B4B;
+	background-image: -moz-linear-gradient( 90deg, rgb(25,101,71) 0%, rgb(29,118,83) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(25,101,71) 0%, rgb(29,118,83) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(25,101,71) 0%, rgb(29,118,83) 100%);
+}
+
+body {
+	background-color: @bodyColor;
+	padding-top: @navHeight;
+}
+
+topnav {
+	.topnavGradient;
+	.navbar();
+	.navbar-fixed-top;
+}
