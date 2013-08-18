@@ -1,0 +1,7 @@
+{
+	"name" : "megamenu",
+	"version" : "0.0.0",
+	"dependencies": {
+		"bower": ">= 0.x"
+	}
+}
